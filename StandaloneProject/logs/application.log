@@ -1,0 +1,1015 @@
+16:58:56 [DEBUG] Message :: Welcome Sree at com.sree.main.Main.main(Main.java:14) in com.sree.main.Main.
+17:00:30 [DEBUG] Message :: Welcome Sree at com.sree.main.Main.main(Main.java:13).
+17:01:19 [DEBUG] [com.sree.main.Main.main(Main.java:13)] Message :: Welcome Sree.
+17:02:07 [DEBUG] [com.sree.main.Main.main(Main.java:13)] - Message :: Welcome Sree.
+17:06:16 [DEBUG] [com.sree.main.Main.main(Main.java:16)] - Message :: Welcome Sree.
+17:17:49 [DEBUG] [com.sree.main.Main.main(Main.java:13)] - Message :: Welcome Sree.
+18:36:18 [DEBUG] [com.sree.main.Main.main(Main.java:13)] - Message :: Welcome Sree.
+18:38:54 [DEBUG] [com.sree.main.Main.main(Main.java:13)] - Message :: Welcome Sree.
+18:52:28 [DEBUG] [com.sree.main.Main.main(Main.java:13)] - Message :: Welcome Sree.
+19:13:08 [DEBUG] [com.sree.main.Main.main(Main.java:13)] - Message :: Welcome Sree.
+19:16:26 [DEBUG] [com.sree.main.Main.main(Main.java:13)] - Message :: Welcome Sree.
+19:29:38 [DEBUG] [com.sree.main.Main.main(Main.java:14)] - Message :: Welcome Sree.
+19:29:38 [DEBUG] [org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111)] - 
+    select
+        troop0_.troop_id as troop1_0_0_,
+        troop0_.troop_name as troop2_0_0_ 
+    from
+        Troop troop0_ 
+    where
+        troop0_.troop_id=?.
+19:29:58 [DEBUG] [com.sree.main.Main.main(Main.java:14)] - Message :: Welcome Sree.
+19:30:02 [DEBUG] [org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111)] - 
+    select
+        troop0_.troop_id as troop1_0_0_,
+        troop0_.troop_name as troop2_0_0_ 
+    from
+        Troop troop0_ 
+    where
+        troop0_.troop_id=?.
+19:30:43 [ERROR] [org.hibernate.LazyInitializationException.<init>(LazyInitializationException.java:42)] - failed to lazily initialize a collection of role: com.sree.domain.Troop.soldiers, no session or session was closed.
+org.hibernate.LazyInitializationException: failed to lazily initialize a collection of role: com.sree.domain.Troop.soldiers, no session or session was closed
+	at org.hibernate.collection.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:380)
+	at org.hibernate.collection.AbstractPersistentCollection.throwLazyInitializationExceptionIfNotConnected(AbstractPersistentCollection.java:372)
+	at org.hibernate.collection.AbstractPersistentCollection.initialize(AbstractPersistentCollection.java:365)
+	at org.hibernate.collection.AbstractPersistentCollection.read(AbstractPersistentCollection.java:108)
+	at org.hibernate.collection.PersistentSet.toString(PersistentSet.java:332)
+	at com.sree.main.Main.main(Main.java:18)
+19:30:54 [ERROR] [org.hibernate.LazyInitializationException.<init>(LazyInitializationException.java:42)] - failed to lazily initialize a collection of role: com.sree.domain.Troop.soldiers, no session or session was closed.
+org.hibernate.LazyInitializationException: failed to lazily initialize a collection of role: com.sree.domain.Troop.soldiers, no session or session was closed
+	at org.hibernate.collection.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:380)
+	at org.hibernate.collection.AbstractPersistentCollection.throwLazyInitializationExceptionIfNotConnected(AbstractPersistentCollection.java:372)
+	at org.hibernate.collection.AbstractPersistentCollection.initialize(AbstractPersistentCollection.java:365)
+	at org.hibernate.collection.AbstractPersistentCollection.read(AbstractPersistentCollection.java:108)
+	at org.hibernate.collection.PersistentSet.toString(PersistentSet.java:332)
+	at com.sree.main.Main.main(Main.java:18)
+19:31:08 [ERROR] [org.hibernate.LazyInitializationException.<init>(LazyInitializationException.java:42)] - failed to lazily initialize a collection of role: com.sree.domain.Troop.soldiers, no session or session was closed.
+org.hibernate.LazyInitializationException: failed to lazily initialize a collection of role: com.sree.domain.Troop.soldiers, no session or session was closed
+	at org.hibernate.collection.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:380)
+	at org.hibernate.collection.AbstractPersistentCollection.throwLazyInitializationExceptionIfNotConnected(AbstractPersistentCollection.java:372)
+	at org.hibernate.collection.AbstractPersistentCollection.initialize(AbstractPersistentCollection.java:365)
+	at org.hibernate.collection.AbstractPersistentCollection.read(AbstractPersistentCollection.java:108)
+	at org.hibernate.collection.PersistentSet.toString(PersistentSet.java:332)
+	at com.sree.main.Main.main(Main.java:18)
+19:32:02 [DEBUG] [com.sree.main.Main.main(Main.java:14)] - Message :: Welcome Sree.
+19:32:02 [DEBUG] [org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111)] - 
+    select
+        troop0_.troop_id as troop1_0_1_,
+        troop0_.troop_name as troop2_0_1_,
+        soldiers1_.troop_fk as troop3_3_,
+        soldiers1_.soldier_id as soldier1_3_,
+        soldiers1_.soldier_id as soldier1_3_0_,
+        soldiers1_.soldier_name as soldier2_3_0_,
+        soldiers1_.troop_fk as troop3_3_0_ 
+    from
+        Troop troop0_ 
+    left outer join
+        Soldier soldiers1_ 
+            on troop0_.troop_id=soldiers1_.troop_fk 
+    where
+        troop0_.troop_id=?.
+19:32:10 [DEBUG] [com.sree.main.Main.main(Main.java:14)] - Message :: Welcome Sree.
+19:32:13 [DEBUG] [org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111)] - 
+    select
+        troop0_.troop_id as troop1_0_1_,
+        troop0_.troop_name as troop2_0_1_,
+        soldiers1_.troop_fk as troop3_3_,
+        soldiers1_.soldier_id as soldier1_3_,
+        soldiers1_.soldier_id as soldier1_3_0_,
+        soldiers1_.soldier_name as soldier2_3_0_,
+        soldiers1_.troop_fk as troop3_3_0_ 
+    from
+        Troop troop0_ 
+    left outer join
+        Soldier soldiers1_ 
+            on troop0_.troop_id=soldiers1_.troop_fk 
+    where
+        troop0_.troop_id=?.
+19:33:31 [DEBUG] [com.sree.main.Main.main(Main.java:14)] - Message :: Welcome Sree.
+19:33:31 [DEBUG] [org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111)] - 
+    select
+        troop0_.troop_id as troop1_0_1_,
+        troop0_.troop_name as troop2_0_1_,
+        soldiers1_.troop_fk as troop3_3_,
+        soldiers1_.soldier_id as soldier1_3_,
+        soldiers1_.soldier_id as soldier1_3_0_,
+        soldiers1_.soldier_name as soldier2_3_0_,
+        soldiers1_.troop_fk as troop3_3_0_ 
+    from
+        Troop troop0_ 
+    left outer join
+        Soldier soldiers1_ 
+            on troop0_.troop_id=soldiers1_.troop_fk 
+    where
+        troop0_.troop_id=?.
+19:33:43 [DEBUG] [com.sree.main.Main.main(Main.java:14)] - Message :: Welcome Sree.
+19:33:50 [DEBUG] [org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111)] - 
+    select
+        troop0_.troop_id as troop1_0_1_,
+        troop0_.troop_name as troop2_0_1_,
+        soldiers1_.troop_fk as troop3_3_,
+        soldiers1_.soldier_id as soldier1_3_,
+        soldiers1_.soldier_id as soldier1_3_0_,
+        soldiers1_.soldier_name as soldier2_3_0_,
+        soldiers1_.troop_fk as troop3_3_0_ 
+    from
+        Troop troop0_ 
+    left outer join
+        Soldier soldiers1_ 
+            on troop0_.troop_id=soldiers1_.troop_fk 
+    where
+        troop0_.troop_id=?.
+16:42:40 [DEBUG] [com.sree.main.Main.main(Main.java:13)] - Message :: Welcome Sree.
+16:44:05 [DEBUG] [com.sree.main.Main.main(Main.java:13)] - Message :: Welcome Sree.
+16:48:34 [DEBUG] [com.sree.main.Main.main(Main.java:13)] - Message :: Welcome Sree.
+16:54:42 [DEBUG] [com.sree.main.Main.main(Main.java:15)] - Message :: Welcome Sree.
+16:55:00 [DEBUG] [com.sree.main.Main.main(Main.java:15)] - Message :: Welcome Sree.
+16:56:57 [DEBUG] [com.sree.main.Main.main(Main.java:15)] - Message :: Welcome Sree.
+18:38:25 [DEBUG] [com.sree.main.Main.main(Main.java:15)] - Message :: Welcome Sree.
+18:54:54 [DEBUG] [com.sree.main.Main.main(Main.java:13)] - Message :: Welcome Sree.
+18:55:31 [DEBUG] [com.sree.main.Main.main(Main.java:13)] - Message :: Welcome Sree.
+18:55:45 [DEBUG] [com.sree.main.Main.main(Main.java:13)] - Message :: Welcome Sree.
+18:56:06 [DEBUG] [com.sree.main.Main.main(Main.java:13)] - Message :: Welcome Sree.
+18:58:52 [DEBUG] [com.sree.main.Main.main(Main.java:15)] - Message :: Welcome Sree.
+18:59:16 [DEBUG] [com.sree.main.Main.main(Main.java:15)] - Message :: Welcome Sree.
+18:59:48 [DEBUG] [com.sree.main.Main.main(Main.java:15)] - Message :: Welcome Sree.
+19:03:51 [DEBUG] [com.sree.main.Main.main(Main.java:18)] - Message :: Welcome Sree.
+19:04:02 [DEBUG] [com.sree.main.Main.main(Main.java:18)] - Message :: Welcome Sree.
+19:04:16 [DEBUG] [com.sree.main.Main.main(Main.java:18)] - Message :: Welcome Sree.
+19:04:28 [DEBUG] [com.sree.main.Main.main(Main.java:18)] - Message :: Welcome Sree.
+19:04:42 [DEBUG] [com.sree.main.Main.main(Main.java:18)] - Message :: Welcome Sree.
+19:05:01 [DEBUG] [com.sree.main.Main.main(Main.java:18)] - Message :: Welcome Sree.
+19:05:09 [DEBUG] [com.sree.main.Main.main(Main.java:18)] - Message :: Welcome Sree.
+19:05:24 [DEBUG] [com.sree.main.Main.main(Main.java:18)] - Message :: Welcome Sree.
+19:06:56 [DEBUG] [com.sree.main.Main.main(Main.java:18)] - Message :: Welcome Sree.
+19:07:04 [DEBUG] [com.sree.main.Main.main(Main.java:18)] - Message :: Welcome Sree.
+19:07:13 [DEBUG] [com.sree.main.Main.main(Main.java:18)] - Message :: Welcome Sree.
+19:07:45 [DEBUG] [com.sree.main.Main.main(Main.java:18)] - Message :: Welcome Sree.
+19:08:14 [DEBUG] [com.sree.main.Main.main(Main.java:18)] - Message :: Welcome Sree.
+19:08:35 [DEBUG] [com.sree.main.Main.main(Main.java:18)] - Message :: Welcome Sree.
+15:09:52 [DEBUG] [com.sree.main.Main.main(Main.java:18)] - Message :: Welcome Sree.
+15:11:23 [DEBUG] [com.sree.main.Main.main(Main.java:18)] - Message :: Welcome Sree.
+15:11:40 [DEBUG] [com.sree.main.Main.main(Main.java:18)] - Message :: Welcome Sree.
+15:12:08 [DEBUG] [com.sree.main.Main.main(Main.java:18)] - Message :: Welcome Sree.
+15:12:21 [DEBUG] [com.sree.main.Main.main(Main.java:18)] - Message :: Welcome Sree.
+15:39:27 [DEBUG] [com.sree.main.Main.main(Main.java:18)] - Message :: Welcome Sree.
+15:42:28 [DEBUG] [com.sree.main.Main.main(Main.java:16)] - Message :: Welcome Sree.
+15:42:32 [DEBUG] [org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111)] - 
+    select
+        employee0_.EMP_ID as EMP1_3_0_,
+        employee0_.CREATED_USER as CREATED2_3_0_,
+        employee0_.CREATED_DATE as CREATED3_3_0_,
+        employee0_.UPDATED_DATE as UPDATED4_3_0_,
+        employee0_.UPDATED_USER as UPDATED5_3_0_,
+        employee0_.ADDRESS as ADDRESS3_0_,
+        employee0_.EMP_NAME as EMP7_3_0_ 
+    from
+        EMPLOYEE employee0_ 
+    where
+        employee0_.EMP_ID=?.
+11:44:36 [WARN ] [org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:144)] - Could not obtain connection metadata.
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1122)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2260)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:787)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:49)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:357)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:285)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:173)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriver(DriverManagerDataSource.java:164)
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnectionFromDriver(AbstractDriverBasedDataSource.java:149)
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnection(AbstractDriverBasedDataSource.java:119)
+	at org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider.getConnection(InjectedDataSourceConnectionProvider.java:46)
+	at org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:111)
+	at org.hibernate.cfg.Configuration.buildSettings(Configuration.java:2101)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1325)
+	at org.hibernate.cfg.AnnotationConfiguration.buildSessionFactory(AnnotationConfiguration.java:867)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:669)
+	at org.hibernate.ejb.HibernatePersistence.createContainerEntityManagerFactory(HibernatePersistence.java:132)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:225)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:308)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1469)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:387)
+	at org.springframework.beans.factory.BeanFactoryUtils.beansOfTypeIncludingAncestors(BeanFactoryUtils.java:266)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.detectPersistenceExceptionTranslators(PersistenceExceptionTranslationInterceptor.java:122)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.<init>(PersistenceExceptionTranslationInterceptor.java:78)
+	at org.springframework.dao.annotation.PersistenceExceptionTranslationAdvisor.<init>(PersistenceExceptionTranslationAdvisor.java:70)
+	at org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor.setBeanFactory(PersistenceExceptionTranslationPostProcessor.java:96)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeAwareMethods(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1400)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:687)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:408)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.sree.common.CommonUtil.<clinit>(CommonUtil.java:18)
+	at com.sree.main.Main.main(Main.java:17)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1122)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:344)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2181)
+	... 52 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(Unknown Source)
+	at java.net.PlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:256)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:293)
+	... 53 more
+11:44:38 [ERROR] [org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:157)] - could not get database metadata.
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1122)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2260)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:787)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:49)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:357)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:285)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:173)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriver(DriverManagerDataSource.java:164)
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnectionFromDriver(AbstractDriverBasedDataSource.java:149)
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnection(AbstractDriverBasedDataSource.java:119)
+	at org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider.getConnection(InjectedDataSourceConnectionProvider.java:46)
+	at org.hibernate.tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.prepare(SuppliedConnectionProviderConnectionHelper.java:51)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:150)
+	at org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:346)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1327)
+	at org.hibernate.cfg.AnnotationConfiguration.buildSessionFactory(AnnotationConfiguration.java:867)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:669)
+	at org.hibernate.ejb.HibernatePersistence.createContainerEntityManagerFactory(HibernatePersistence.java:132)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:225)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:308)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1469)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:387)
+	at org.springframework.beans.factory.BeanFactoryUtils.beansOfTypeIncludingAncestors(BeanFactoryUtils.java:266)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.detectPersistenceExceptionTranslators(PersistenceExceptionTranslationInterceptor.java:122)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.<init>(PersistenceExceptionTranslationInterceptor.java:78)
+	at org.springframework.dao.annotation.PersistenceExceptionTranslationAdvisor.<init>(PersistenceExceptionTranslationAdvisor.java:70)
+	at org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor.setBeanFactory(PersistenceExceptionTranslationPostProcessor.java:96)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeAwareMethods(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1400)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:687)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:408)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.sree.common.CommonUtil.<clinit>(CommonUtil.java:18)
+	at com.sree.main.Main.main(Main.java:17)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1122)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:344)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2181)
+	... 53 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(Unknown Source)
+	at java.net.PlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:256)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:293)
+	... 54 more
+11:44:38 [ERROR] [org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:188)] - could not complete schema update.
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1122)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2260)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:787)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:49)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:357)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:285)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:173)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriver(DriverManagerDataSource.java:164)
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnectionFromDriver(AbstractDriverBasedDataSource.java:149)
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnection(AbstractDriverBasedDataSource.java:119)
+	at org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider.getConnection(InjectedDataSourceConnectionProvider.java:46)
+	at org.hibernate.tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.prepare(SuppliedConnectionProviderConnectionHelper.java:51)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:150)
+	at org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:346)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1327)
+	at org.hibernate.cfg.AnnotationConfiguration.buildSessionFactory(AnnotationConfiguration.java:867)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:669)
+	at org.hibernate.ejb.HibernatePersistence.createContainerEntityManagerFactory(HibernatePersistence.java:132)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:225)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:308)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1469)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:387)
+	at org.springframework.beans.factory.BeanFactoryUtils.beansOfTypeIncludingAncestors(BeanFactoryUtils.java:266)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.detectPersistenceExceptionTranslators(PersistenceExceptionTranslationInterceptor.java:122)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.<init>(PersistenceExceptionTranslationInterceptor.java:78)
+	at org.springframework.dao.annotation.PersistenceExceptionTranslationAdvisor.<init>(PersistenceExceptionTranslationAdvisor.java:70)
+	at org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor.setBeanFactory(PersistenceExceptionTranslationPostProcessor.java:96)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeAwareMethods(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1400)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:687)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:408)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.sree.common.CommonUtil.<clinit>(CommonUtil.java:18)
+	at com.sree.main.Main.main(Main.java:17)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1122)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:344)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2181)
+	... 53 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(Unknown Source)
+	at java.net.PlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:256)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:293)
+	... 54 more
+11:44:38 [DEBUG] [com.sree.main.Main.main(Main.java:18)] - Message :: Welcome Sree.
+11:46:44 [DEBUG] [com.sree.main.Main.main(Main.java:18)] - Message :: Welcome Sree.
+16:44:11 [DEBUG] [com.sree.main.Main.main(Main.java:18)] - Message :: Welcome Sree.
+16:47:28 [DEBUG] [com.sree.main.Main.main(Main.java:19)] - Message :: Welcome Sree.
+16:47:29 [DEBUG] [org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111)] - 
+    select
+        appuser0_.USER_ID as USER1_3_0_,
+        appuser0_.CREATED_USER as CREATED2_3_0_,
+        appuser0_.CREATED_DATE as CREATED3_3_0_,
+        appuser0_.UPDATED_DATE as UPDATED4_3_0_,
+        appuser0_.UPDATED_USER as UPDATED5_3_0_,
+        appuser0_.ACCOUNT_NON_EXPIRED as ACCOUNT6_3_0_,
+        appuser0_.ACCOUNT_NON_LOCKED as ACCOUNT7_3_0_,
+        appuser0_.CREDENTIALS_NON_EXPIRED as CREDENTI8_3_0_,
+        appuser0_.ENABLED as ENABLED3_0_,
+        appuser0_.PASSWORD as PASSWORD3_0_,
+        appuser0_.USER_NAME as USER11_3_0_ 
+    from
+        USER appuser0_ 
+    where
+        appuser0_.USER_ID=?.
+16:47:39 [DEBUG] [com.sree.main.Main.main(Main.java:19)] - Message :: Welcome Sree.
+16:47:39 [DEBUG] [org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111)] - 
+    select
+        appuser0_.USER_ID as USER1_3_0_,
+        appuser0_.CREATED_USER as CREATED2_3_0_,
+        appuser0_.CREATED_DATE as CREATED3_3_0_,
+        appuser0_.UPDATED_DATE as UPDATED4_3_0_,
+        appuser0_.UPDATED_USER as UPDATED5_3_0_,
+        appuser0_.ACCOUNT_NON_EXPIRED as ACCOUNT6_3_0_,
+        appuser0_.ACCOUNT_NON_LOCKED as ACCOUNT7_3_0_,
+        appuser0_.CREDENTIALS_NON_EXPIRED as CREDENTI8_3_0_,
+        appuser0_.ENABLED as ENABLED3_0_,
+        appuser0_.PASSWORD as PASSWORD3_0_,
+        appuser0_.USER_NAME as USER11_3_0_ 
+    from
+        USER appuser0_ 
+    where
+        appuser0_.USER_ID=?.
+16:48:13 [ERROR] [org.hibernate.LazyInitializationException.<init>(LazyInitializationException.java:42)] - failed to lazily initialize a collection of role: com.sree.domain.AppUser.userAuthorities, no session or session was closed.
+org.hibernate.LazyInitializationException: failed to lazily initialize a collection of role: com.sree.domain.AppUser.userAuthorities, no session or session was closed
+	at org.hibernate.collection.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:380)
+	at org.hibernate.collection.AbstractPersistentCollection.throwLazyInitializationExceptionIfNotConnected(AbstractPersistentCollection.java:372)
+	at org.hibernate.collection.AbstractPersistentCollection.initialize(AbstractPersistentCollection.java:365)
+	at org.hibernate.collection.AbstractPersistentCollection.read(AbstractPersistentCollection.java:108)
+	at org.hibernate.collection.PersistentBag.toString(PersistentBag.java:506)
+	at com.sree.main.Main.main(Main.java:23)
+16:48:32 [ERROR] [org.hibernate.LazyInitializationException.<init>(LazyInitializationException.java:42)] - failed to lazily initialize a collection of role: com.sree.domain.AppUser.userAuthorities, no session or session was closed.
+org.hibernate.LazyInitializationException: failed to lazily initialize a collection of role: com.sree.domain.AppUser.userAuthorities, no session or session was closed
+	at org.hibernate.collection.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:380)
+	at org.hibernate.collection.AbstractPersistentCollection.throwLazyInitializationExceptionIfNotConnected(AbstractPersistentCollection.java:372)
+	at org.hibernate.collection.AbstractPersistentCollection.initialize(AbstractPersistentCollection.java:365)
+	at org.hibernate.collection.AbstractPersistentCollection.read(AbstractPersistentCollection.java:108)
+	at org.hibernate.collection.PersistentBag.toString(PersistentBag.java:506)
+	at com.sree.main.Main.main(Main.java:23)
+16:49:06 [ERROR] [org.hibernate.LazyInitializationException.<init>(LazyInitializationException.java:42)] - failed to lazily initialize a collection of role: com.sree.domain.AppUser.userAuthorities, no session or session was closed.
+org.hibernate.LazyInitializationException: failed to lazily initialize a collection of role: com.sree.domain.AppUser.userAuthorities, no session or session was closed
+	at org.hibernate.collection.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:380)
+	at org.hibernate.collection.AbstractPersistentCollection.throwLazyInitializationExceptionIfNotConnected(AbstractPersistentCollection.java:372)
+	at org.hibernate.collection.AbstractPersistentCollection.initialize(AbstractPersistentCollection.java:365)
+	at org.hibernate.collection.AbstractPersistentCollection.read(AbstractPersistentCollection.java:108)
+	at org.hibernate.collection.PersistentBag.toString(PersistentBag.java:506)
+	at com.sree.main.Main.main(Main.java:23)
+16:50:24 [DEBUG] [com.sree.main.Main.main(Main.java:19)] - Message :: Welcome Sree.
+16:54:39 [ERROR] [org.hibernate.LazyInitializationException.<init>(LazyInitializationException.java:42)] - could not initialize proxy - no Session.
+org.hibernate.LazyInitializationException: could not initialize proxy - no Session
+	at org.hibernate.proxy.AbstractLazyInitializer.initialize(AbstractLazyInitializer.java:86)
+	at org.hibernate.proxy.AbstractLazyInitializer.getImplementation(AbstractLazyInitializer.java:140)
+	at org.hibernate.proxy.pojo.javassist.JavassistLazyInitializer.invoke(JavassistLazyInitializer.java:190)
+	at com.sree.domain.AppUser_$$_javassist_3.getUsername(AppUser_$$_javassist_3.java)
+	at com.sree.main.Main.main(Main.java:23)
+16:55:46 [DEBUG] [com.sree.main.Main.main(Main.java:19)] - Message :: Welcome Sree.
+16:55:52 [DEBUG] [org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111)] - 
+    select
+        appuser0_.USER_ID as USER1_3_0_,
+        appuser0_.CREATED_USER as CREATED2_3_0_,
+        appuser0_.CREATED_DATE as CREATED3_3_0_,
+        appuser0_.UPDATED_DATE as UPDATED4_3_0_,
+        appuser0_.UPDATED_USER as UPDATED5_3_0_,
+        appuser0_.ACCOUNT_NON_EXPIRED as ACCOUNT6_3_0_,
+        appuser0_.ACCOUNT_NON_LOCKED as ACCOUNT7_3_0_,
+        appuser0_.CREDENTIALS_NON_EXPIRED as CREDENTI8_3_0_,
+        appuser0_.ENABLED as ENABLED3_0_,
+        appuser0_.PASSWORD as PASSWORD3_0_,
+        appuser0_.USER_NAME as USER11_3_0_ 
+    from
+        USER appuser0_ 
+    where
+        appuser0_.USER_ID=?.
+16:56:16 [ERROR] [org.hibernate.LazyInitializationException.<init>(LazyInitializationException.java:42)] - failed to lazily initialize a collection of role: com.sree.domain.AppUser.userAuthorities, no session or session was closed.
+org.hibernate.LazyInitializationException: failed to lazily initialize a collection of role: com.sree.domain.AppUser.userAuthorities, no session or session was closed
+	at org.hibernate.collection.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:380)
+	at org.hibernate.collection.AbstractPersistentCollection.throwLazyInitializationExceptionIfNotConnected(AbstractPersistentCollection.java:372)
+	at org.hibernate.collection.AbstractPersistentCollection.initialize(AbstractPersistentCollection.java:365)
+	at org.hibernate.collection.AbstractPersistentCollection.read(AbstractPersistentCollection.java:108)
+	at org.hibernate.collection.PersistentBag.toString(PersistentBag.java:506)
+	at com.sree.main.Main.main(Main.java:23)
+16:57:01 [DEBUG] [com.sree.main.Main.main(Main.java:19)] - Message :: Welcome Sree.
+16:57:38 [ERROR] [org.hibernate.LazyInitializationException.<init>(LazyInitializationException.java:42)] - could not initialize proxy - no Session.
+org.hibernate.LazyInitializationException: could not initialize proxy - no Session
+	at org.hibernate.proxy.AbstractLazyInitializer.initialize(AbstractLazyInitializer.java:86)
+	at org.hibernate.proxy.AbstractLazyInitializer.getImplementation(AbstractLazyInitializer.java:140)
+	at org.hibernate.proxy.pojo.javassist.JavassistLazyInitializer.invoke(JavassistLazyInitializer.java:190)
+	at com.sree.domain.AppUser_$$_javassist_3.getUserAuthorities(AppUser_$$_javassist_3.java)
+	at com.sree.main.Main.main(Main.java:23)
+16:58:37 [DEBUG] [com.sree.main.Main.main(Main.java:19)] - Message :: Welcome Sree.
+16:58:37 [DEBUG] [org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111)] - 
+    select
+        appuser0_.USER_ID as USER1_3_0_,
+        appuser0_.CREATED_USER as CREATED2_3_0_,
+        appuser0_.CREATED_DATE as CREATED3_3_0_,
+        appuser0_.UPDATED_DATE as UPDATED4_3_0_,
+        appuser0_.UPDATED_USER as UPDATED5_3_0_,
+        appuser0_.ACCOUNT_NON_EXPIRED as ACCOUNT6_3_0_,
+        appuser0_.ACCOUNT_NON_LOCKED as ACCOUNT7_3_0_,
+        appuser0_.CREDENTIALS_NON_EXPIRED as CREDENTI8_3_0_,
+        appuser0_.ENABLED as ENABLED3_0_,
+        appuser0_.PASSWORD as PASSWORD3_0_,
+        appuser0_.USER_NAME as USER11_3_0_ 
+    from
+        USER appuser0_ 
+    where
+        appuser0_.USER_ID=?.
+16:58:37 [ERROR] [org.hibernate.LazyInitializationException.<init>(LazyInitializationException.java:42)] - failed to lazily initialize a collection of role: com.sree.domain.AppUser.userAuthorities, no session or session was closed.
+org.hibernate.LazyInitializationException: failed to lazily initialize a collection of role: com.sree.domain.AppUser.userAuthorities, no session or session was closed
+	at org.hibernate.collection.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:380)
+	at org.hibernate.collection.AbstractPersistentCollection.throwLazyInitializationExceptionIfNotConnected(AbstractPersistentCollection.java:372)
+	at org.hibernate.collection.AbstractPersistentCollection.readSize(AbstractPersistentCollection.java:119)
+	at org.hibernate.collection.PersistentBag.size(PersistentBag.java:248)
+	at com.sree.main.Main.main(Main.java:24)
+16:59:13 [DEBUG] [com.sree.main.Main.main(Main.java:19)] - Message :: Welcome Sree.
+16:59:13 [DEBUG] [org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111)] - 
+    select
+        appuser0_.USER_ID as USER1_3_1_,
+        appuser0_.CREATED_USER as CREATED2_3_1_,
+        appuser0_.CREATED_DATE as CREATED3_3_1_,
+        appuser0_.UPDATED_DATE as UPDATED4_3_1_,
+        appuser0_.UPDATED_USER as UPDATED5_3_1_,
+        appuser0_.ACCOUNT_NON_EXPIRED as ACCOUNT6_3_1_,
+        appuser0_.ACCOUNT_NON_LOCKED as ACCOUNT7_3_1_,
+        appuser0_.CREDENTIALS_NON_EXPIRED as CREDENTI8_3_1_,
+        appuser0_.ENABLED as ENABLED3_1_,
+        appuser0_.PASSWORD as PASSWORD3_1_,
+        appuser0_.USER_NAME as USER11_3_1_,
+        userauthor1_.USER_ID as USER3_3_,
+        userauthor1_.AUTHORITY_ID as AUTHORITY1_3_,
+        userauthor1_.AUTHORITY_ID as AUTHORITY1_4_0_,
+        userauthor1_.AUTHORITY as AUTHORITY4_0_ 
+    from
+        USER appuser0_ 
+    left outer join
+        USER_AUTHORITY userauthor1_ 
+            on appuser0_.USER_ID=userauthor1_.USER_ID 
+    where
+        appuser0_.USER_ID=?.
+16:59:39 [DEBUG] [com.sree.main.Main.main(Main.java:19)] - Message :: Welcome Sree.
+16:59:39 [DEBUG] [org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111)] - 
+    select
+        appuser0_.USER_ID as USER1_3_1_,
+        appuser0_.CREATED_USER as CREATED2_3_1_,
+        appuser0_.CREATED_DATE as CREATED3_3_1_,
+        appuser0_.UPDATED_DATE as UPDATED4_3_1_,
+        appuser0_.UPDATED_USER as UPDATED5_3_1_,
+        appuser0_.ACCOUNT_NON_EXPIRED as ACCOUNT6_3_1_,
+        appuser0_.ACCOUNT_NON_LOCKED as ACCOUNT7_3_1_,
+        appuser0_.CREDENTIALS_NON_EXPIRED as CREDENTI8_3_1_,
+        appuser0_.ENABLED as ENABLED3_1_,
+        appuser0_.PASSWORD as PASSWORD3_1_,
+        appuser0_.USER_NAME as USER11_3_1_,
+        userauthor1_.USER_ID as USER3_3_,
+        userauthor1_.AUTHORITY_ID as AUTHORITY1_3_,
+        userauthor1_.AUTHORITY_ID as AUTHORITY1_4_0_,
+        userauthor1_.AUTHORITY as AUTHORITY4_0_ 
+    from
+        USER appuser0_ 
+    left outer join
+        USER_AUTHORITY userauthor1_ 
+            on appuser0_.USER_ID=userauthor1_.USER_ID 
+    where
+        appuser0_.USER_ID=?.
+17:01:27 [DEBUG] [com.sree.main.Main.main(Main.java:20)] - Message :: Welcome Sree.
+17:01:27 [DEBUG] [org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111)] - 
+    select
+        appuser0_.USER_ID as USER1_3_1_,
+        appuser0_.CREATED_USER as CREATED2_3_1_,
+        appuser0_.CREATED_DATE as CREATED3_3_1_,
+        appuser0_.UPDATED_DATE as UPDATED4_3_1_,
+        appuser0_.UPDATED_USER as UPDATED5_3_1_,
+        appuser0_.ACCOUNT_NON_EXPIRED as ACCOUNT6_3_1_,
+        appuser0_.ACCOUNT_NON_LOCKED as ACCOUNT7_3_1_,
+        appuser0_.CREDENTIALS_NON_EXPIRED as CREDENTI8_3_1_,
+        appuser0_.ENABLED as ENABLED3_1_,
+        appuser0_.PASSWORD as PASSWORD3_1_,
+        appuser0_.USER_NAME as USER11_3_1_,
+        userauthor1_.USER_ID as USER3_3_,
+        userauthor1_.AUTHORITY_ID as AUTHORITY1_3_,
+        userauthor1_.AUTHORITY_ID as AUTHORITY1_4_0_,
+        userauthor1_.AUTHORITY as AUTHORITY4_0_ 
+    from
+        USER appuser0_ 
+    left outer join
+        USER_AUTHORITY userauthor1_ 
+            on appuser0_.USER_ID=userauthor1_.USER_ID 
+    where
+        appuser0_.USER_ID=?.
+17:52:38 [ERROR] [org.hibernate.hql.ast.ErrorCounter.reportError(ErrorCounter.java:56)] -  Unable to locate appropriate constructor on class [com.sree.domain.AppUser]
+[cause=org.hibernate.PropertyNotFoundException: no appropriate constructor in class: com.sree.domain.AppUser].
+17:52:38 [ERROR] [org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:395)] - Error in named query: findUserByUserName.
+org.hibernate.hql.ast.QuerySyntaxException: User is not mapped [select user from User user where user.username = ? and user.enabled = 1]
+	at org.hibernate.hql.ast.util.SessionFactoryHelper.requireClassPersister(SessionFactoryHelper.java:181)
+	at org.hibernate.hql.ast.tree.FromElementFactory.addFromElement(FromElementFactory.java:110)
+	at org.hibernate.hql.ast.tree.FromClause.addFromElement(FromClause.java:93)
+	at org.hibernate.hql.ast.HqlSqlWalker.createFromElement(HqlSqlWalker.java:277)
+	at org.hibernate.hql.antlr.HqlSqlBaseWalker.fromElement(HqlSqlBaseWalker.java:3056)
+	at org.hibernate.hql.antlr.HqlSqlBaseWalker.fromElementList(HqlSqlBaseWalker.java:2945)
+	at org.hibernate.hql.antlr.HqlSqlBaseWalker.fromClause(HqlSqlBaseWalker.java:688)
+	at org.hibernate.hql.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:544)
+	at org.hibernate.hql.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:281)
+	at org.hibernate.hql.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:229)
+	at org.hibernate.hql.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:251)
+	at org.hibernate.hql.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:183)
+	at org.hibernate.hql.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:134)
+	at org.hibernate.engine.query.HQLQueryPlan.<init>(HQLQueryPlan.java:101)
+	at org.hibernate.engine.query.HQLQueryPlan.<init>(HQLQueryPlan.java:80)
+	at org.hibernate.engine.query.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:94)
+	at org.hibernate.impl.SessionFactoryImpl.checkNamedQueries(SessionFactoryImpl.java:436)
+	at org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:384)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1327)
+	at org.hibernate.cfg.AnnotationConfiguration.buildSessionFactory(AnnotationConfiguration.java:867)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:669)
+	at org.hibernate.ejb.HibernatePersistence.createContainerEntityManagerFactory(HibernatePersistence.java:132)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:225)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:308)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1469)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:387)
+	at org.springframework.beans.factory.BeanFactoryUtils.beansOfTypeIncludingAncestors(BeanFactoryUtils.java:266)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.detectPersistenceExceptionTranslators(PersistenceExceptionTranslationInterceptor.java:122)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.<init>(PersistenceExceptionTranslationInterceptor.java:78)
+	at org.springframework.dao.annotation.PersistenceExceptionTranslationAdvisor.<init>(PersistenceExceptionTranslationAdvisor.java:70)
+	at org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor.setBeanFactory(PersistenceExceptionTranslationPostProcessor.java:96)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeAwareMethods(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1400)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:687)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:408)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.sree.common.CommonUtil.<clinit>(CommonUtil.java:18)
+	at com.sree.main.Main.main(Main.java:16)
+17:52:38 [ERROR] [org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:395)] - Error in named query: findAllUsers.
+org.hibernate.hql.ast.QuerySyntaxException: User is not mapped [from User user]
+	at org.hibernate.hql.ast.util.SessionFactoryHelper.requireClassPersister(SessionFactoryHelper.java:181)
+	at org.hibernate.hql.ast.tree.FromElementFactory.addFromElement(FromElementFactory.java:110)
+	at org.hibernate.hql.ast.tree.FromClause.addFromElement(FromClause.java:93)
+	at org.hibernate.hql.ast.HqlSqlWalker.createFromElement(HqlSqlWalker.java:277)
+	at org.hibernate.hql.antlr.HqlSqlBaseWalker.fromElement(HqlSqlBaseWalker.java:3056)
+	at org.hibernate.hql.antlr.HqlSqlBaseWalker.fromElementList(HqlSqlBaseWalker.java:2945)
+	at org.hibernate.hql.antlr.HqlSqlBaseWalker.fromClause(HqlSqlBaseWalker.java:688)
+	at org.hibernate.hql.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:544)
+	at org.hibernate.hql.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:281)
+	at org.hibernate.hql.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:229)
+	at org.hibernate.hql.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:251)
+	at org.hibernate.hql.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:183)
+	at org.hibernate.hql.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:134)
+	at org.hibernate.engine.query.HQLQueryPlan.<init>(HQLQueryPlan.java:101)
+	at org.hibernate.engine.query.HQLQueryPlan.<init>(HQLQueryPlan.java:80)
+	at org.hibernate.engine.query.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:94)
+	at org.hibernate.impl.SessionFactoryImpl.checkNamedQueries(SessionFactoryImpl.java:436)
+	at org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:384)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1327)
+	at org.hibernate.cfg.AnnotationConfiguration.buildSessionFactory(AnnotationConfiguration.java:867)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:669)
+	at org.hibernate.ejb.HibernatePersistence.createContainerEntityManagerFactory(HibernatePersistence.java:132)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:225)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:308)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1469)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:387)
+	at org.springframework.beans.factory.BeanFactoryUtils.beansOfTypeIncludingAncestors(BeanFactoryUtils.java:266)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.detectPersistenceExceptionTranslators(PersistenceExceptionTranslationInterceptor.java:122)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.<init>(PersistenceExceptionTranslationInterceptor.java:78)
+	at org.springframework.dao.annotation.PersistenceExceptionTranslationAdvisor.<init>(PersistenceExceptionTranslationAdvisor.java:70)
+	at org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor.setBeanFactory(PersistenceExceptionTranslationPostProcessor.java:96)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeAwareMethods(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1400)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:687)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:408)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.sree.common.CommonUtil.<clinit>(CommonUtil.java:18)
+	at com.sree.main.Main.main(Main.java:16)
+17:52:38 [ERROR] [org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:395)] - Error in named query: getUsers.
+org.hibernate.hql.ast.QuerySyntaxException: Unable to locate appropriate constructor on class [com.sree.domain.AppUser] [select new AppUser(user.id, user.username, user.accountNonExpired) from com.sree.domain.AppUser user]
+	at org.hibernate.hql.ast.QuerySyntaxException.convert(QuerySyntaxException.java:54)
+	at org.hibernate.hql.ast.QuerySyntaxException.convert(QuerySyntaxException.java:47)
+	at org.hibernate.hql.ast.ErrorCounter.throwQueryException(ErrorCounter.java:82)
+	at org.hibernate.hql.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:258)
+	at org.hibernate.hql.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:183)
+	at org.hibernate.hql.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:134)
+	at org.hibernate.engine.query.HQLQueryPlan.<init>(HQLQueryPlan.java:101)
+	at org.hibernate.engine.query.HQLQueryPlan.<init>(HQLQueryPlan.java:80)
+	at org.hibernate.engine.query.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:94)
+	at org.hibernate.impl.SessionFactoryImpl.checkNamedQueries(SessionFactoryImpl.java:436)
+	at org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:384)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1327)
+	at org.hibernate.cfg.AnnotationConfiguration.buildSessionFactory(AnnotationConfiguration.java:867)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:669)
+	at org.hibernate.ejb.HibernatePersistence.createContainerEntityManagerFactory(HibernatePersistence.java:132)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:225)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:308)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1469)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:387)
+	at org.springframework.beans.factory.BeanFactoryUtils.beansOfTypeIncludingAncestors(BeanFactoryUtils.java:266)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.detectPersistenceExceptionTranslators(PersistenceExceptionTranslationInterceptor.java:122)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.<init>(PersistenceExceptionTranslationInterceptor.java:78)
+	at org.springframework.dao.annotation.PersistenceExceptionTranslationAdvisor.<init>(PersistenceExceptionTranslationAdvisor.java:70)
+	at org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor.setBeanFactory(PersistenceExceptionTranslationPostProcessor.java:96)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeAwareMethods(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1400)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:687)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:408)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.sree.common.CommonUtil.<clinit>(CommonUtil.java:18)
+	at com.sree.main.Main.main(Main.java:16)
+17:53:49 [ERROR] [org.hibernate.hql.ast.ErrorCounter.reportError(ErrorCounter.java:56)] -  Unable to locate appropriate constructor on class [com.sree.domain.AppUser]
+[cause=org.hibernate.PropertyNotFoundException: no appropriate constructor in class: com.sree.domain.AppUser].
+17:53:49 [ERROR] [org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:395)] - Error in named query: getUsers.
+org.hibernate.hql.ast.QuerySyntaxException: Unable to locate appropriate constructor on class [com.sree.domain.AppUser] [select new AppUser(user.id, user.username, user.accountNonExpired) from com.sree.domain.AppUser user]
+	at org.hibernate.hql.ast.QuerySyntaxException.convert(QuerySyntaxException.java:54)
+	at org.hibernate.hql.ast.QuerySyntaxException.convert(QuerySyntaxException.java:47)
+	at org.hibernate.hql.ast.ErrorCounter.throwQueryException(ErrorCounter.java:82)
+	at org.hibernate.hql.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:258)
+	at org.hibernate.hql.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:183)
+	at org.hibernate.hql.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:134)
+	at org.hibernate.engine.query.HQLQueryPlan.<init>(HQLQueryPlan.java:101)
+	at org.hibernate.engine.query.HQLQueryPlan.<init>(HQLQueryPlan.java:80)
+	at org.hibernate.engine.query.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:94)
+	at org.hibernate.impl.SessionFactoryImpl.checkNamedQueries(SessionFactoryImpl.java:436)
+	at org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:384)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1327)
+	at org.hibernate.cfg.AnnotationConfiguration.buildSessionFactory(AnnotationConfiguration.java:867)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:669)
+	at org.hibernate.ejb.HibernatePersistence.createContainerEntityManagerFactory(HibernatePersistence.java:132)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:225)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:308)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1469)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:387)
+	at org.springframework.beans.factory.BeanFactoryUtils.beansOfTypeIncludingAncestors(BeanFactoryUtils.java:266)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.detectPersistenceExceptionTranslators(PersistenceExceptionTranslationInterceptor.java:122)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.<init>(PersistenceExceptionTranslationInterceptor.java:78)
+	at org.springframework.dao.annotation.PersistenceExceptionTranslationAdvisor.<init>(PersistenceExceptionTranslationAdvisor.java:70)
+	at org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor.setBeanFactory(PersistenceExceptionTranslationPostProcessor.java:96)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeAwareMethods(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1400)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:687)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:408)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.sree.common.CommonUtil.<clinit>(CommonUtil.java:18)
+	at com.sree.main.Main.main(Main.java:16)
+17:55:22 [DEBUG] [org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111)] - 
+    select
+        appuser0_.USER_ID as USER1_5_,
+        appuser0_.CREATED_USER as CREATED2_5_,
+        appuser0_.CREATED_DATE as CREATED3_5_,
+        appuser0_.UPDATED_DATE as UPDATED4_5_,
+        appuser0_.UPDATED_USER as UPDATED5_5_,
+        appuser0_.ACCOUNT_NON_EXPIRED as ACCOUNT6_5_,
+        appuser0_.ACCOUNT_NON_LOCKED as ACCOUNT7_5_,
+        appuser0_.CREDENTIALS_NON_EXPIRED as CREDENTI8_5_,
+        appuser0_.ENABLED as ENABLED5_,
+        appuser0_.PASSWORD as PASSWORD5_,
+        appuser0_.USER_NAME as USER11_5_ 
+    from
+        USER appuser0_.
+17:55:22 [DEBUG] [org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111)] - 
+    select
+        userauthor0_.USER_ID as USER3_1_,
+        userauthor0_.AUTHORITY_ID as AUTHORITY1_1_,
+        userauthor0_.AUTHORITY_ID as AUTHORITY1_6_0_,
+        userauthor0_.AUTHORITY as AUTHORITY6_0_ 
+    from
+        USER_AUTHORITY userauthor0_ 
+    where
+        userauthor0_.USER_ID=?.
+17:55:59 [ERROR] [org.hibernate.hql.ast.ErrorCounter.reportError(ErrorCounter.java:56)] -  Unable to locate appropriate constructor on class [com.sree.domain.AppUser]
+[cause=org.hibernate.PropertyNotFoundException: no appropriate constructor in class: com.sree.domain.AppUser].
+17:55:59 [ERROR] [org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:395)] - Error in named query: getUsers.
+org.hibernate.hql.ast.QuerySyntaxException: Unable to locate appropriate constructor on class [com.sree.domain.AppUser] [select new AppUser(user.id, user.username, user.accountNonExpired) from com.sree.domain.AppUser user]
+	at org.hibernate.hql.ast.QuerySyntaxException.convert(QuerySyntaxException.java:54)
+	at org.hibernate.hql.ast.QuerySyntaxException.convert(QuerySyntaxException.java:47)
+	at org.hibernate.hql.ast.ErrorCounter.throwQueryException(ErrorCounter.java:82)
+	at org.hibernate.hql.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:258)
+	at org.hibernate.hql.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:183)
+	at org.hibernate.hql.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:134)
+	at org.hibernate.engine.query.HQLQueryPlan.<init>(HQLQueryPlan.java:101)
+	at org.hibernate.engine.query.HQLQueryPlan.<init>(HQLQueryPlan.java:80)
+	at org.hibernate.engine.query.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:94)
+	at org.hibernate.impl.SessionFactoryImpl.checkNamedQueries(SessionFactoryImpl.java:436)
+	at org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:384)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1327)
+	at org.hibernate.cfg.AnnotationConfiguration.buildSessionFactory(AnnotationConfiguration.java:867)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:669)
+	at org.hibernate.ejb.HibernatePersistence.createContainerEntityManagerFactory(HibernatePersistence.java:132)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:225)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:308)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1469)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:387)
+	at org.springframework.beans.factory.BeanFactoryUtils.beansOfTypeIncludingAncestors(BeanFactoryUtils.java:266)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.detectPersistenceExceptionTranslators(PersistenceExceptionTranslationInterceptor.java:122)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.<init>(PersistenceExceptionTranslationInterceptor.java:78)
+	at org.springframework.dao.annotation.PersistenceExceptionTranslationAdvisor.<init>(PersistenceExceptionTranslationAdvisor.java:70)
+	at org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor.setBeanFactory(PersistenceExceptionTranslationPostProcessor.java:96)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeAwareMethods(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1400)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:687)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:408)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.sree.common.CommonUtil.<clinit>(CommonUtil.java:18)
+	at com.sree.main.Main.main(Main.java:16)
+17:56:31 [DEBUG] [org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111)] - 
+    select
+        appuser0_.USER_ID as col_0_0_,
+        appuser0_.USER_NAME as col_1_0_,
+        appuser0_.ACCOUNT_NON_EXPIRED as col_2_0_ 
+    from
+        USER appuser0_.
+17:57:11 [DEBUG] [org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111)] - 
+    select
+        distinct appuser0_.USER_ID as col_0_0_,
+        appuser0_.USER_NAME as col_1_0_,
+        appuser0_.ACCOUNT_NON_EXPIRED as col_2_0_ 
+    from
+        USER appuser0_.
+17:58:33 [DEBUG] [org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111)] - 
+    select
+        distinct appuser0_.USER_ID as col_0_0_,
+        appuser0_.USER_NAME as col_1_0_,
+        appuser0_.ACCOUNT_NON_EXPIRED as col_2_0_ 
+    from
+        USER appuser0_.
+17:59:37 [ERROR] [org.hibernate.hql.ast.ErrorCounter.reportError(ErrorCounter.java:56)] - line 1:20: unexpected token: distinct.
+17:59:37 [ERROR] [org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:395)] - Error in named query: getUsers.
+org.hibernate.hql.ast.QuerySyntaxException: unexpected token: distinct near line 1, column 20 [select new AppUser(distinct user.id, user.username, user.accountNonExpired) from com.sree.domain.AppUser user]
+	at org.hibernate.hql.ast.QuerySyntaxException.convert(QuerySyntaxException.java:54)
+	at org.hibernate.hql.ast.QuerySyntaxException.convert(QuerySyntaxException.java:47)
+	at org.hibernate.hql.ast.ErrorCounter.throwQueryException(ErrorCounter.java:82)
+	at org.hibernate.hql.ast.QueryTranslatorImpl.parse(QueryTranslatorImpl.java:281)
+	at org.hibernate.hql.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:180)
+	at org.hibernate.hql.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:134)
+	at org.hibernate.engine.query.HQLQueryPlan.<init>(HQLQueryPlan.java:101)
+	at org.hibernate.engine.query.HQLQueryPlan.<init>(HQLQueryPlan.java:80)
+	at org.hibernate.engine.query.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:94)
+	at org.hibernate.impl.SessionFactoryImpl.checkNamedQueries(SessionFactoryImpl.java:436)
+	at org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:384)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1327)
+	at org.hibernate.cfg.AnnotationConfiguration.buildSessionFactory(AnnotationConfiguration.java:867)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:669)
+	at org.hibernate.ejb.HibernatePersistence.createContainerEntityManagerFactory(HibernatePersistence.java:132)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:225)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:308)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1469)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:387)
+	at org.springframework.beans.factory.BeanFactoryUtils.beansOfTypeIncludingAncestors(BeanFactoryUtils.java:266)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.detectPersistenceExceptionTranslators(PersistenceExceptionTranslationInterceptor.java:122)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.<init>(PersistenceExceptionTranslationInterceptor.java:78)
+	at org.springframework.dao.annotation.PersistenceExceptionTranslationAdvisor.<init>(PersistenceExceptionTranslationAdvisor.java:70)
+	at org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor.setBeanFactory(PersistenceExceptionTranslationPostProcessor.java:96)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeAwareMethods(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1400)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:687)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:408)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at com.sree.common.CommonUtil.<clinit>(CommonUtil.java:18)
+	at com.sree.main.Main.main(Main.java:16)
+18:01:45 [DEBUG] [org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111)] - 
+    select
+        distinct appuser0_.USER_ID as col_0_0_,
+        appuser0_.USER_NAME as col_1_0_,
+        appuser0_.ACCOUNT_NON_EXPIRED as col_2_0_ 
+    from
+        USER appuser0_.
+18:19:37 [DEBUG] [org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111)] - 
+    getUsers.
+18:19:37 [WARN ] [org.hibernate.util.JDBCExceptionReporter.logExceptions(JDBCExceptionReporter.java:100)] - SQL Error: 1064, SQLState: 42000.
+18:19:37 [ERROR] [org.hibernate.util.JDBCExceptionReporter.logExceptions(JDBCExceptionReporter.java:101)] - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getUsers' at line 1.
+18:20:08 [DEBUG] [org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111)] - 
+    getUsers.
+18:20:08 [WARN ] [org.hibernate.util.JDBCExceptionReporter.logExceptions(JDBCExceptionReporter.java:100)] - SQL Error: 1064, SQLState: 42000.
+18:20:08 [ERROR] [org.hibernate.util.JDBCExceptionReporter.logExceptions(JDBCExceptionReporter.java:101)] - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getUsers' at line 1.
+18:21:39 [DEBUG] [org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111)] - 
+    getUsers.
+18:21:39 [WARN ] [org.hibernate.util.JDBCExceptionReporter.logExceptions(JDBCExceptionReporter.java:100)] - SQL Error: 1064, SQLState: 42000.
+18:21:39 [ERROR] [org.hibernate.util.JDBCExceptionReporter.logExceptions(JDBCExceptionReporter.java:101)] - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getUsers' at line 1.
+18:24:58 [DEBUG] [org.hibernate.jdbc.util.SQLStatementLogger.logStatement(SQLStatementLogger.java:111)] - 
+    select
+        appuser0_.USER_ID as col_0_0_,
+        appuser0_.USER_NAME as col_1_0_,
+        appuser0_.ACCOUNT_NON_EXPIRED as col_2_0_ 
+    from
+        USER appuser0_.
